@@ -6,7 +6,7 @@
     5!=5*4*3*2*1=120   
 
 # PROGRAM  
- 
+
   '''# include<stdio.h>   
   int main()  
   {  
@@ -21,11 +21,12 @@
     printf("Factorial of %d = %d.",n,fact);  
   }'''
 
-  ** NOTE:  
-  
-    The program handles only non-negative integers.    
-  For large numbers,the result may exceed standard int storage;hence unsigned long long is used.  
-  *This program is end.  
+# NOTE:  
+  The program handles only non-negative integers.  
+  For large numbers,the result may exceed standard int storage;hence unsigned long long is used. 
+
+   # THIS PROGRAM IS END.
+   
 
 
 
