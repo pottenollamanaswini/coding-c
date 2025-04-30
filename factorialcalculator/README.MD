@@ -1,12 +1,13 @@
 # FACTORIAL OF A NUMBER  
- ''' The product of all positive integers less than or equal to n. 
+  The product of all positive integers less than or equal to n. 
   n!=n*(n-1)*(n-2)*...*1  
 
     For example:    
     5!=5*4*3*2*1=120   
 
-** PROGRAM:  
-  # include<stdio.h>   
+# PROGRAM  
+ 
+  '''# include<stdio.h>   
   int main()  
   {  
     int n,i,fact=1;  
@@ -18,11 +19,13 @@
         fact=fact*i;    
     }  
     printf("Factorial of %d = %d.",n,fact);  
-  }  
+  }'''
+
+  ** NOTE:  
   
-  **NOTE:  
-  The program handles only non-negative integers.    
+    The program handles only non-negative integers.    
   For large numbers,the result may exceed standard int storage;hence unsigned long long is used.  
-  *This program is end.'''
+  *This program is end.  
+
 
 
