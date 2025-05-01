@@ -1,9 +1,9 @@
 # GUESS THE NUMBER-C PROGRAM  
-1. This is a simple c program 
-2. Where the user tries to guess a randomly generated number within a given range.  
-3. The program gives hints whether the guess is too high or low until the correct number is guessed.  
+1.This is a simple c program  
+2.Where the user tries to guess a randomly generated number within a given range.  
+3.The program gives hints whether the guess is too high or low until the correct number is guessed.  
 
-* CODE:
+''' c  
 #include <stdio.h>  
 #include <stdlib.h>  
 #include <time.h>  
@@ -32,7 +32,9 @@ int main() {
 
     return 0;  
 }  
-* FEATURES:
+'''  
+
+# FEATURES  
 1.Random number between 1 and 100  
 2.Interactive command-line input  
 3.Feedback after each guess  
