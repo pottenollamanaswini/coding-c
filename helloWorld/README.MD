@@ -11,8 +11,6 @@ This is a simple "Hello, World!" program written in C. It demonstrates basic syn
 
 3. Run the compiled program:
 
-
-## Code
 ```c
 #include <stdio.h>
 
