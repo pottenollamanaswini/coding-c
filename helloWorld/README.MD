@@ -1,26 +1,31 @@
-# Hello World in C  
+# Hello World in C
 
-This is a simple C program that prints "Hello, World!" to the console. 
+This is a simple C program that prints "Hello, World!" to the console.
 
-## Description  
-This is a simple "Hello, World!" program written in C. It demonstrates basic syntax and structure of a C program.  
+## How to Compile and Run
 
-## How to Run  
-1. Ensure you have a C compiler installed (like `gcc`).  
-2. Compile the program using the command:  
+1. Open a terminal.
+2. Navigate to the directory containing `hello.c`.
+3. Compile the program using:
+   ```sh
+   gcc hello.c -o hello  
+## How to run  
+   ./hello  
 
-3. Run the compiled program:
-
-```c
-#include <stdio.h>
-
+## Source code  
+'''c  
+   #include <stdio.h>
 int main() {
- printf("Hello, World!\n");
- return 0;
-}
-'''  
+    printf("Hello, World!\n");
+    return 0;
+}  
 
-# END  
+## Expected output  
+Hello,World!  
+
+
+
+
 
 
 

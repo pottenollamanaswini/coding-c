@@ -48,6 +48,7 @@ int main() {
 
  return 0;
 }  
+'''  
 
 # OUTPUT  
 Welcome to the Guess the Number Game!

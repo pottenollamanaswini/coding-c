@@ -46,11 +46,13 @@ int main() {
  fibonacci(terms);
  return 0;
 }
+'''  
+
 
 ## Example Output
  Enter the number of terms:8
  Fibonacci series: 0 1 1 2 3 5 8 13  
- 
+
 
 
 
