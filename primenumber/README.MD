@@ -1,38 +1,51 @@
-# PRIME NUMBER  
-  A prime number is a natural number greater than 1 that has no positive divisors other than 1 and itself.  
-       ex:2,3,5,7,11,13,....    
-        
-        '''c  
-        #include <stdio.h>  
+ # Prime Number Checker in C
 
-int main() {  
-    int num, i, isPrime = 1;  
+## Introduction
+This project implements a **prime number checker** using **C programming**. A prime number is a natural number greater than **1** that is only divisible by **1 and itself**.
 
-    printf("Enter a positive integer: ");  
-    scanf("%d", &num);  
+## How It Works
+- The program takes an integer as input.
+- It checks divisibility from `2` to `sqrt(n)`.
+- If no divisors are found, the number is prime.
 
-    if (num <= 1) {  
-        isPrime = 0;  
-    } else {  
-        for (i = 2; i <= num / 2; ++i) {  
-            if (num % i == 0) {  
-                isPrime = 0;  
-                break;  
-            }  
-        }  
-    }  
+## Usage
+Compile and run the program with an integer as input to check if it's prime.
 
-    if (isPrime)  
-        printf("%d is a prime number.\n", num);  
-    else  
-        printf("%d is not a prime number.\n", num);  
+### Example:
+```c  
+#include <stdio.h>
 
-    return 0;  
-}
+int main() {
+    int num, i, isPrime = 1;
+
+    printf("Enter a positive integer: ");
+    scanf("%d", &num);
+
+    if (num <= 1) {
+        isPrime = 0;
+    } else {
+        for (i = 2; i <= num / 2; i++) {
+            if (num % i == 0) {
+                isPrime = 0;
+                break;
+            }
+        }
+    }
+
+    if (isPrime)
+        printf("%d is a prime number.\n", num);
+    else
+        printf("%d is not a prime number.\n", num);
+
+    return 0;
+}  
 '''  
+## output  
+Enter a positive integer: 11
+11 is a prime number.  
 
-# HOW IT WORKS  
-1.The user enters a number.  
-2.The program checks if its greater than 1.  
-3.it tests divisibility from 2 to n/2.  
-4.if divisible,its not prime;otherwise,it is..   
+Enter a positive integer: 20
+20 is not a prime number.  
+
+## END  
+
