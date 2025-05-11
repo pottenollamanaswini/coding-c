@@ -1,43 +1,73 @@
-# GUESS THE NUMBER-C PROGRAM  
-1.This is a simple c program  
-2.Where the user tries to guess a randomly generated number within a given range.  
-3.The program gives hints whether the guess is too high or low until the correct number is guessed.  
+# Guess the Number Game in C
 
-''' c  
-#include <stdio.h>  
-#include <stdlib.h>  
-#include <time.h>  
+## Overview
+This is a simple command-line game where the player tries to guess a randomly generated number within a certain range. The program provides hints (higher or lower) until the correct number is guessed.
 
-int main() {  
-    int number, guess, attempts = 0;  
-    srand(time(0));  
-    number = rand() % 100 + 1; // Random number between 1 and 100  
+## How It Works
+- The program generates a random number within a specified range.
+- The player enters a guess.
+- The program informs whether the guess is too high, too low, or correct.
+- The game continues until the correct number is guessed.
 
-    printf("Welcome to the Guess the Number Game!\n");  
-    printf("I'm thinking of a number between 1 and 100.\n");  
+## Prerequisites
+- A C compiler (e.g., GCC)
+- Basic knowledge of running C programs
 
-    do {  
-        printf("Enter your guess: ");  
-        scanf("%d", &guess);  
-        attempts++;  
+## How to Run
+1. Compile the program using:  
 
-        if (guess > number) {  
-            printf("Too high!\n");  
-        } else if (guess < number) {  
-            printf("Too low!\n");  
-        } else {  
-            printf("Congratulations! You guessed it in %d attempts.\n", attempts);  
-        }  
-    } while (guess != number);  
+2. Run the game:  
 
-    return 0;  
+
+## Sample Code
+```c
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int main() {
+ int number, guess, attempts = 0;
+ srand(time(0));
+ number = rand() % 100 + 1;  // Random number between 1 and 100
+
+ printf("Guess the number between 1 and 100:\n");
+
+ do {
+     printf("Enter your guess: ");
+     scanf("%d", &guess);
+     attempts++;
+
+     if (guess > number) {
+         printf("Too high!\n");
+     } else if (guess < number) {
+         printf("Too low!\n");
+     } else {
+         printf("Correct! You guessed it in %d attempts.\n", attempts);
+     }
+ } while (guess != number);
+
+ return 0;
 }  
-'''  
 
-# FEATURES  
-1.Random number between 1 and 100  
-2.Interactive command-line input  
-3.Feedback after each guess  
-4.Count of attempts  
+# OUTPUT  
+Welcome to the Guess the Number Game!
+I have picked a number between 1 and 100. Try to guess it!
 
-** "This is known as guess the number"  
+Enter your guess: 30
+Too low! Try again.
+
+Enter your guess: 60
+Too high! Try again.
+
+Enter your guess: 45
+Too low! Try again.
+
+Enter your guess: 52
+Congratulations! You guessed the number in 4 attempts.  
+
+# THIS IS KNOWN AS GUESS THE NUMBER  
+
+
+
+
+

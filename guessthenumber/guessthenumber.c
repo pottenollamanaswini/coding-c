@@ -20,7 +20,7 @@ int main() {
         } else if (guess < number) {
             printf("Too low!\n");
         } else {
-            printf("Congratulations! You guessed it in %d attempts.\n", attempts);
+            printf("Correct! You guessed it in %d attempts.\n", attempts);
         }
     } while (guess != number);
 
